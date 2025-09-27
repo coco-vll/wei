@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEI 2025 - BDE Joffre | Week-end d'intégration 10-12 octobre</title>
+    
+    <!-- SEO et partage social -->
+    <meta name="description" content="Rejoins-nous pour le WEI BDE Joffre 2025 ! 10-12 octobre au Domaine des Guifettes. 175€ tout compris : logement, repas, soirées, activités. Places limitées !">
+    <meta name="keywords" content="WEI, BDE Joffre, week-end intégration, étudiant, 2025, Luçon">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="WEI 2025 - BDE Joffre">
+    <meta property="og:description" content="Week-end d'intégration 10-12 octobre 2025 au Domaine des Guifettes">
+    <meta property="og:type" content="event">
+    <meta property="og:url" content="https://bdejoffre.fr/wei2025">
+    <meta property="og:image" content="https://www.domainedesguifettes.com/wp-content/uploads/2022/09/domaine-guifettes-top-accueil.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WEI 2025 - BDE Joffre">
+    <meta name="twitter:description" content="Week-end d'intégration 10-12 octobre 2025">
+    
+    <!-- Préchargement des ressources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    
+    <!-- Icônes et favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎉</text></svg>">
+    <meta name="theme-color" content="#1C61B6">
+    
+    <!-- Fonts et CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Données structurées JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "WEI BDE Joffre 2025",
+        "startDate": "2025-10-10T19:30:00+02:00",
+        "endDate": "2025-10-12T15:00:00+02:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+            "@type": "Place",
+            "name": "Domaine des Guifettes",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Rue de la Clairaye",
+                "addressLocality": "Luçon",
+                "postalCode": "85400",
+                "addressCountry": "FR"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "BDE Joffre",
+            "url": "https://instagram.com/geain_tonic"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "175",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock"
+        }
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-blue: #1C61B6;
+            --primary-gold: #FFD700;
+            --accent-orange: #FFA500;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+            --shadow: 0 4px 12px rgba(0,0,0,0.1);
+            --shadow-hover: 0 8px 25px rgba(0,0,0,0.15);
+            --border-radius: 12px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        .animate-fade-in {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .animate-delay-1 { animation-delay: 0.1s; }
+        .animate-delay-2 { animation-delay: 0.2s; }
+        .animate-delay-3 { animation-delay: 0.3s; }
+
+        /* Hero Section - Mobile First */
+        .hero {
+            min-height: 100vh;
+            min-height: 100dvh; /* Support pour les navigateurs modernes */
+            background: linear-gradient(135deg, rgba(28, 97, 182, 0.8), rgba(28, 97, 182, 0.6)),
+                       url('https://www.domainedesguifettes.com/wp-content/uploads/2022/09/domaine-guifettes-top-accueil.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            color: var(--white);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.3) 100%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .logo-container {
+            margin-bottom: 24px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, var(--primary-gold), var(--accent-orange));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: var(--primary-blue);
+            border: 3px solid var(--white);
+            box-shadow: var(--shadow);
+            animation: pulse 2s infinite;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: var(--primary-gold);
+            line-height: 1.1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+            opacity: 0.95;
+            color: #f8f9fa;
+            font-weight: 500;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 24px;
+            background: linear-gradient(135deg, var(--primary-gold), var(--accent-orange));
+            color: var(--primary-blue);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover, .cta-button:focus {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+            background: linear-gradient(135deg, var(--accent-orange), #ff8c00);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        /* Countdown Timer */
+        .countdown-container {
+            margin-top: 32px;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .countdown-title {
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .countdown-item {
+            text-align: center;
+            min-width: 50px;
+        }
+
+        .countdown-number {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary-gold);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .countdown-label {
+            font-size: 0.7rem;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 48px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 32px;
+            color: var(--primary-blue);
+        }
+
+        .fire-emoji {
+            font-size: 1.4rem;
+            margin: 0 8px;
+            animation: pulse 1.5s infinite;
+        }
+
+        /* Info Section */
+        .info-section {
+            background: var(--white);
+        }
+
+        .info-intro {
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 32px;
+            color: var(--text-light);
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        .info-grid {
+            display: grid;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .info-card {
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            padding: 24px;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--primary-gold);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .info-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .info-card h3 {
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+        }
+
+        .info-card i {
+            color: var(--primary-gold);
+            font-size: 1.4rem;
+            width: 24px;
+            flex-shrink: 0;
+        }
+
+        .info-card p {
+            color: #333333;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+
+        .info-card strong {
+            color: var(--primary-blue);
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            background: var(--bg-light);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .gallery-item {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 16px;
+            transform: translateY(100%);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        /* Map Section */
+        .map-container {
+            margin: 32px 0;
+            text-align: center;
+        }
+
+        .map-placeholder {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            border: 2px solid var(--primary-blue);
+            padding: 40px 20px;
+            border-radius: var(--border-radius);
+            color: var(--primary-blue);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .map-placeholder:hover {
+            background: linear-gradient(135deg, #bbdefb, #90caf9);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .map-placeholder i {
+            margin-bottom: 16px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: var(--white);
+        }
+
+        .faq-item {
+            margin-bottom: 16px;
+            border: 1px solid #e0e0e0;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 20px;
+            background: none;
+            border: none;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background: var(--bg-light);
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer.active {
+            max-height: 200px;
+            padding: 20px;
+        }
+
+        .faq-answer p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Actions Section */
+        .actions-section {
+            background: linear-gradient(135deg, var(--primary-blue), #0d47a1);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .actions-section .section-title {
+            color: var(--white);
+        }
+
+        .actions-intro {
+            font-size: 1.1rem;
+            margin-bottom: 32px;
+            opacity: 0.9;
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .action-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 18px 24px;
+            background: linear-gradient(135deg, var(--primary-gold), var(--accent-orange));
+            color: var(--primary-blue);
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .action-button:hover {
+            background: linear-gradient(135deg, var(--accent-orange), #ff8c00);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .action-button i {
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0a1e42;
+            color: var(--white);
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .footer-content {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .footer h3 {
+            color: var(--primary-gold);
+            margin-bottom: 16px;
+            font-size: 1.2rem;
+        }
+
+        .footer p {
+            margin-bottom: 12px;
+            opacity: 1;
+            color: #ffffff;
+        }
+
+        .social-links {
+            margin-top: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-link {
+            color: var(--primary-gold);
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            transform: scale(1.2);
+            color: var(--accent-orange);
+        }
+
+        /* Loading states */
+        .loading {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Utility classes */
+        .text-center { text-align: center; }
+        .font-bold { font-weight: 700; }
+        .opacity-90 { opacity: 0.9; }
+
+        /* Touch improvements for mobile */
+        .touchable {
+            -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+            tap-highlight-color: rgba(0,0,0,0.1);
+        }
+
+        /* Responsive improvements */
+        @media (min-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .countdown {
+                gap: 20px;
+            }
+            
+            .countdown-item {
+                min-width: 60px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .section {
+                padding: 80px 40px;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .logo {
+                width: 100px;
+                height: 100px;
+                font-size: 40px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 24px;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .action-buttons {
+                flex-direction: row;
+                max-width: none;
+            }
+        }
+
+        /* Accessibilité */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Mode sombre */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-light: #1a1a1a;
+                --white: #2d2d2d;
+                --text-dark: #ffffff;
+                --text-light: #cccccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content animate-fade-in">
+            <div class="logo-container animate-fade-in animate-delay-1">
+                <div class="logo">
+                    <i class="fas fa-glass-cheers"></i>
+                </div>
+            </div>
+            <h1 class="animate-fade-in animate-delay-2">WEI<br>10-11-12 OCTOBRE</h1>
+            <p class="hero-subtitle animate-fade-in animate-delay-3">Le week-end d'intégration qui va marquer ta rentrée !</p>
+            <a href="#info" class="cta-button touchable animate-fade-in animate-delay-3">
+                <i class="fas fa-ticket-alt"></i> Je prends ma place
+            </a>
+            
+            <div class="countdown-container animate-fade-in animate-delay-3">
+                <p class="countdown-title">Plus que :</p>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">jours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">heures</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="section info-section" id="info">
+        <h2 class="section-title">
+            <span class="fire-emoji">🔥</span>
+            LE WEI ARRIVE
+            <span class="fire-emoji">🔥</span>
+        </h2>
+        
+        <p class="info-intro">
+            2 jours, une ambiance de folie, des olympiades, des soirées inoubliables...<br>
+            Prépare ta valise, ton énergie et ta voix pour chanter jusqu'au bout de la nuit !
+        </p>
+        
+        <div class="info-grid">
+            <div class="info-card animate-fade-in">
+                <h3><i class="fas fa-map-marker-alt"></i> Où ?</h3>
+                <p><strong>Domaine des Guifettes</strong><br>
+                Rue de la Clairaye<br>
+                85400 Luçon</p>
+            </div>
+            
+            <div class="info-card animate-fade-in animate-delay-1">
+                <h3><i class="fas fa-bus"></i> Transport</h3>
+                <p><strong>Inclus !</strong><br>
+                Départ vendredi 19h30 Gare Sud<br>
+                Retour dimanche vers 15h</p>
+            </div>
+            
+            <div class="info-card animate-fade-in animate-delay-2">
+                <h3><i class="fas fa-euro-sign"></i> Prix</h3>
+                <p><strong>175€</strong> tout compris<br>
+                (logement, repas, soirées, activités)<br>
+                + 100€ de caution (remboursée)</p>
+            </div>
+            
+            <div class="info-card animate-fade-in animate-delay-3">
+                <h3><i class="fas fa-calendar-alt"></i> Quand ?</h3>
+                <p><strong>10 - 12 octobre 2025</strong><br>
+                Un week-end complet d'intégration<br>
+                et de découverte !</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery-section">
+        <h2 class="section-title">Le Domaine des Guifettes</h2>
+        
+        <div class="gallery">
+            <div class="gallery-item touchable">
+                <img src="https://www.domainedesguifettes.com/wp-content/uploads/2022/09/domaine-guifettes-top-accueil.jpg" 
+                     alt="Vue panoramique du Domaine des Guifettes avec espaces verts et hébergements"
+                     loading="lazy">
+            </div>
+            
+            <div class="gallery-item touchable">
+                <img src="https://www.campings.com/img/_/landscape-medium/77718/77b2eb8a-3c05-4b25-8702-332facede014.jpg/camping-domaine-des-guifettes-77718-1.jpg" 
+                     alt="Hébergements en toile au camping"
+                     loading="lazy">
+            </div>
+            
+        </div>
+        
+        <div class="map-container">
+            <div class="map-placeholder touchable" onclick="openMaps()">
+                <i class="fas fa-map-marked-alt fa-2x"></i><br><br>
+                <strong>Domaine des Guifettes, Luçon</strong><br>
+                📍 Rue de la Clairaye, 85400 Luçon<br>
+                <small style="opacity: 0.8;">Cliquer pour ouvrir dans Maps</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <h2 class="section-title">Infos utiles</h2>
+        
+        <div class="faq-item">
+            <button class="faq-question touchable" onclick="toggleFAQ(this)">
+                <span>Que dois-je apporter ?</span>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Une tenue qui ne craint pas, tenue de soirée (thème à venir),sac de couchage et taie d'oreiller, serviettes de toilette, pique nique du vendredi soir, produits d'entretiens + torchons</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button class="faq-question touchable" onclick="toggleFAQ(this)">
+                <span>Quel format de bagage est autorisé ?</span>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Un bagage cabine (soute du car) + sac (aux pieds dans le car)</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button class="faq-question touchable" onclick="toggleFAQ(this)">
+                <span>Où dort-on sur place ?</span>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Mobil home de 4 à 8 personnes (commencez à réfléchir à vos groupes)</p>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+    <!-- Actions Section -->
+    <section class="section actions-section">
+        <h2 class="section-title">Réserve ta place !</h2>
+        <p class="actions-intro">
+            Les places sont limitées, ne rate pas cette opportunité !<br>
+            <strong>Plus que quelques places disponibles</strong> 🔥
+        </p>
+        
+        <div class="action-buttons">
+            <a href="https://www.helloasso.com/associations/bde-joffre/evenements/wei-2025-2026" 
+               class="action-button touchable" target="_blank" rel="noopener">
+                <i class="fas fa-ticket-alt"></i> Acheter ma place (175€)
+            </a>
+            
+            <a href="https://app.v2.swikly.com/fr/checkout/?secret=6a7276cf-f544-49c1-86c1-1e8965ef65c1" 
+               class="action-button touchable" target="_blank" rel="noopener">
+                <i class="fas fa-shield-alt"></i> Payer la caution (100€)
+            </a>
+        </div>
+        
+        <div style="margin-top: 32px; padding: 20px; background: rgba(255,255,255,0.1); border-radius: var(--border-radius); backdrop-filter: blur(10px);">
+            <h3 style="color: var(--primary-gold); margin-bottom: 12px; font-size: 1.1rem;">
+                <i class="fas fa-info-circle"></i> Étapes d'inscription
+            </h3>
+            <ol style="text-align: left; padding-left: 20px; opacity: 0.9; line-height: 1.6;">
+                <li>Acheter ta place (175€)</li>
+                <li>Payer la caution (100€ - non débité)</li>
+                <li>C'est tout, on se voit au WEI ! 🎉</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" style="background: var(--bg-light);">
+        <h2 class="section-title">
+            <i class="fas fa-envelope" style="color: var(--primary-gold); margin-right: 8px;"></i>
+            Une question ?
+        </h2>
+        
+        <div class="contact-grid" style="display: grid; gap: 16px; max-width: 400px; margin: 0 auto;">
+            <a href="https://www.instagram.com/geain_tonic" target="_blank" rel="noopener" 
+               class="contact-card touchable">
+                <i class="fab fa-instagram"></i>
+                <div>
+                    <h4>Instagram</h4>
+                    <p>@geain_tonic</p>
+                </div>
+            </a>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3><i class="fas fa-glass-cheers"></i> BDE Joffre</h3>
+            <p>Prépare-toi pour un week-end inoubliable !</p>
+            <p style="font-size: 0.9rem; opacity: 0.7;">WEI 2025 - 10, 11 & 12 octobre</p>
+            
+            <div class="social-links">
+                <a href="https://www.instagram.com/geain_tonic" target="_blank" rel="noopener" 
+                   class="social-link touchable" aria-label="Instagram BDE Joffre">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Configuration
+        const WEI_DATE = new Date('2025-10-10T19:30:00').getTime();
+        
+        // Smooth scrolling pour les liens internes
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = WEI_DATE - now;
+
+            if (distance > 0) {
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            } else {
+                document.querySelector('.countdown-container').innerHTML = 
+                    '<p style="font-size: 1.2rem; font-weight: 700; color: var(--primary-gold);">🎉 C\'EST PARTI ! 🎉</p>';
+            }
+        }
+
+        // Initialiser et mettre à jour le countdown
+        updateCountdown();
+        setInterval(updateCountdown, 60000); // Mise à jour chaque minute
+
+        // FAQ Toggle
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('.faq-icon');
+            const isActive = answer.classList.contains('active');
+            
+            // Fermer toutes les autres FAQ
+            document.querySelectorAll('.faq-answer.active').forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('active');
+                    item.previousElementSibling.classList.remove('active');
+                }
+            });
+            
+            // Toggle la FAQ actuelle
+            if (isActive) {
+                answer.classList.remove('active');
+                button.classList.remove('active');
+            } else {
+                answer.classList.add('active');
+                button.classList.add('active');
+            }
+        }
+
+        // Ouvrir Maps
+        function openMaps() {
+            const address = "Domaine des Guifettes, Rue de la Clairaye, 85400 Luçon, France";
+            const encodedAddress = encodeURIComponent(address);
+            
+            // Détecter le type d'appareil
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            const isAndroid = /Android/.test(navigator.userAgent);
+            
+            let url;
+            if (isIOS) {
+                url = `http://maps.apple.com/?q=${encodedAddress}`;
+            } else if (isAndroid) {
+                url = `geo:0,0?q=${encodedAddress}`;
+            } else {
+                url = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
+            }
+            
+            window.open(url, '_blank');
+        }
+
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-fade-in');
+            const windowHeight = window.innerHeight;
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                
+                if (elementTop < windowHeight - 50) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Initialiser les animations au scroll
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+        
+        // Optimisation des images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('load', function() {
+                this.parentElement.classList.remove('loading');
+            });
+            
+            img.addEventListener('error', function() {
+                this.style.background = 'linear-gradient(135deg, var(--primary-blue), var(--primary-gold))';
+                this.style.color = 'white';
+                this.style.display = 'flex';
+                this.style.alignItems = 'center';
+                this.style.justifyContent = 'center';
+                this.style.fontSize = '2rem';
+                this.innerHTML = '<i class="fas fa-image"></i>';
+            });
+        });
+
+        // Amélioration tactile
+        document.querySelectorAll('.touchable').forEach(element => {
+            element.addEventListener('touchstart', function() {
+                this.style.transform = 'scale(0.95)';
+            });
+            
+            element.addEventListener('touchend', function() {
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 100);
+            });
+        });
+
+        // Performance : lazy loading manuel pour les navigateurs plus anciens
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                        }
+                        observer.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+
+        // Tracking des clics sur les boutons d'action (pour analytics)
+        document.querySelectorAll('.action-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const action = this.textContent.includes('place') ? 'buy_ticket' : 'pay_deposit';
+                console.log('User action:', action);
+                
+                // Ici tu peux ajouter ton code analytics
+                // gtag('event', action, { ... });
+            });
+        });
+
+        // Service Worker pour le cache (si nécessaire)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                // Optionnel : enregistrer un service worker pour la mise en cache
+                console.log('Service Worker support detected');
+            });
+        }
+
+        // Amélioration de l'accessibilité
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Tab') {
+                document.body.classList.add('keyboard-navigation');
+            }
+        });
+
+        document.addEventListener('click', function() {
+            document.body.classList.remove('keyboard-navigation');
+        });
+    </script>
+
+    <!-- Styles pour les améliorations supplémentaires -->
+    <style>
+        /* Timeline styles */
+        .program-timeline {
+            position: relative;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 32px;
+            position: relative;
+        }
+
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 16px;
+            top: 40px;
+            width: 2px;
+            height: calc(100% + 8px);
+            background: linear-gradient(to bottom, var(--primary-gold), var(--accent-orange));
+            z-index: 0;
+        }
+
+        .timeline-dot {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-gold), var(--accent-orange));
+            flex-shrink: 0;
+            margin-right: 20px;
+            position: relative;
+            z-index: 1;
+            box-shadow: var(--shadow);
+        }
+
+        .timeline-content {
+            flex: 1;
+            background: var(--white);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border-left: 3px solid var(--primary-gold);
+        }
+
+        .timeline-content h3 {
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+        }
+
+        .timeline-content p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .timeline-content strong {
+            color: var(--primary-blue);
+            font-weight: 600;
+        }
+
+        /* Contact cards */
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 20px;
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .contact-card i {
+            font-size: 1.5rem;
+            color: var(--primary-gold);
+            width: 30px;
+            text-align: center;
+        }
+
+        .contact-card h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: 4px;
+        }
+
+        .contact-card p {
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        /* Navigation au clavier */
+        .keyboard-navigation *:focus {
+            outline: 3px solid var(--primary-gold) !important;
+            outline-offset: 2px !important;
+        }
+
+        /* Améliorations responsive supplémentaires */
+        @media (max-width: 320px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .countdown {
+                gap: 8px;
+            }
+            
+            .countdown-item {
+                min-width: 40px;
+            }
+            
+            .countdown-number {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .section {
+                max-width: 900px;
+            }
+            
+            .info-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 32px;
+            }
+            
+            .contact-grid {
+                max-width: 600px;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</body>
+</html>
